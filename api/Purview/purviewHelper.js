@@ -3,7 +3,7 @@
 const fetch = require("node-fetch");
 
 const AtlasAccountName = process.env["AtlasAccountName"] || null,
-      apiPrefix        = `https://${AtlasAccountName}.catalog.purview.azure.com/api`;
+      apiPrefix        = `https://${AtlasAccountName}.purview.azure.com/catalog/api`;
 
 // GET all type definitions
 async function getTypeDefs(token) {
